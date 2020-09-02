@@ -1,16 +1,13 @@
-const cover = document.querySelector(".card-image");
-const title = document.querySelector(".card-content h5");
-const artist = document.querySelector(".card-content .artist");
-const audio = document.querySelector("audio");
-
-const data = {
-    title: "Como começei a programar / Por que criamos a Rocketseat / Nossa Stack",
-    artist: "Diego Fernandes",
-    cover: "images/como-comecei.jpg",
-    file: "audio/como-comecei.mp3"
+const pathImage = function(file){
+  return `images/${file}`;
 };
 
-cover.style.background = `url('${data.cover}') no-repeat center center / cover`;
-title.innerText = data.title;
-artist.innerText = data.artist;
-audio.src = data.file;
+const pathAudio = function(file){
+  return `audio/${file}`;
+};
+
+window.addEventListener('load', () => {
+  player.start();
+});
+
+
